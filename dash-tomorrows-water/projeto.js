@@ -13,7 +13,7 @@ function showSuccessMessage() {
 
 async function createProjeto(projeto) {
     console.log(projeto)
-    const url = 'http://localhost:8080/v1/tomorrows-water/projeto';
+    const url = 'https://tomorrows-water.onrender.com/v1/tomorrows-water/projeto';
     const options = {
         method: 'POST',
         headers: {

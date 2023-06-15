@@ -13,7 +13,7 @@ function showSuccessMessage() {
 
 async function createAdm(administrador) {
     console.log(administrador)
-    const url = 'http://localhost:8080/v1/tomorrows-water/administrador';
+    const url = 'https://tomorrows-water.onrender.com/v1/tomorrows-water/administrador';
     const options = {
         method: 'POST',
         headers: {

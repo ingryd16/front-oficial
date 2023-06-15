@@ -1,7 +1,7 @@
 'use strict'
 
 async function createPatrocinador(patrocinador) {
-    const url = 'http://localhost:8080/v1/tomorrows-water/patrocinador';
+    const url = 'https://tomorrows-water.onrender.com/v1/tomorrows-water/patrocinador';
     const options = {
         method: 'POST',
         headers: {
