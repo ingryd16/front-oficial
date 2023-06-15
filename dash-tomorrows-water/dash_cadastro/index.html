@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b94100b9f6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;500;800&display=swap"
+        rel="stylesheet">
+    <script src="../projeto.js" defer type="module"></script>
+    <script src="../js/inserirAdm.js" defer type="module"></script>
+    <script src="../post.js" defer type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="arrow-home">
+            <a href="../dashboard/index.html">
+                <i class="fas fa-share-square fa-flip-horizontal" style="color: #00c0ea; font-size: 3rem;"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="actions">Cadastrar:</div>
+
+            <div class="validation">
+
+                <div class="card-projetos">
+                    <div class="title"> Projeto</div>
+
+                    <div class="forms-projeto">
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Nome:</span>
+                                </div>
+                                <input id="input-nome-projeto" type="text" placeholder="Nome" class="input-linha">
+                            </div>
+                        </div>
+
+                        <!-- <div class="row-1"> -->
+                        <!-- <div class="medidas">
+                            <div>
+                                <span>Data:</span>
+                            </div>
+                            <div class="inputs-medidas">
+                                <input type="text" placeholder="Início: aaaa/mm/dd" class="input-linha">
+                                <input type="text" placeholder="Término: aaaa/mm/dd" class="input-linha">
+                            </div>
+                        </div> -->
+                        <!-- </div> -->
+
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Imagem:</span>
+                                </div>
+                                <input id="input-imagem-projeto" type="text" placeholder="Imagem" class="input-linha">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="descricao">
+                                <div>
+                                    <span>Descrição:</span>
+                                </div>
+                                <input id="input-descricao-projeto" type="text" class="input-linha">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn">
+                        <div id="bottom-container-projeto">
+                        </div>
+                        <button id="submit-button-projeto">Enviar</button>
+                    </div>
+                </div>
+
+                <div class="card-adm">
+                    <div class="title"> Administrador</div>
+
+                    <div class="forms-adm">
+
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Nome:</span>
+                                </div>
+                                <input id="input-nome-adm" type="text" placeholder="Nome" class="input-linha">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Email:</span>
+                                </div>
+                                <input id="input-email-adm" type="text" placeholder="Email" class="input-linha">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Senha:</span>
+                                </div>
+                                <input type="password" id="input-senha-adm" placeholder="Senha" class="input-linha">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn">
+                        <div id="bottom-container">
+                        </div>
+                        <button id="submit-button-adm">Enviar</button>
+                    </div>
+                </div>
+
+                <div class="card-produtos">
+                    <div class="title"> Produto </div>
+
+                    <div class="forms-produto">
+
+                        <div class="row-1">
+                            <div class="nome">
+                                <div>
+                                    <span>Nome:</span>
+                                </div>
+                                <input type="text" placeholder="Nome" class="input-linha" id="input-nome">
+                            </div>
+
+                            <div class="preco">
+                                <div>
+                                    <span>Preço:</span>
+                                </div>
+                                <input type="text" placeholder="Preço" class="input-linha" id="input-preco">
+                            </div>
+
+                            <div class="categoria">
+                                <div>
+                                    <span>Categoria:</span>
+                                </div>
+                                <input type="text" placeholder="Categoria" class="input-linha" id="input-categoria">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="medidas">
+                                <div>
+                                    <span>Medidas:</span>
+                                </div>
+                                <div class="inputs-medidas">
+                                    <input type="number" placeholder="Altura" class="input-linha" id="input-altura">
+                                    <input type="number" placeholder="Largura" class="input-linha" id="input-largura">
+                                    <input type="text" placeholder="Tamanho" class="input-linha" id="input-tamanho">
+                                </div>
+                            </div>
+
+                            <div class="cor">
+                                <div>
+                                    <span>Cor:</span>
+                                </div>
+                                <input type="text" placeholder="Cor" class="input-linha" id="input-cor">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="descricao">
+                                <div>
+                                    <span>Descrição:</span>
+                                </div>
+                                <input type="text" class="input-linha" id="input-descricao">
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="imagem">
+                                <div>
+                                    <span>Imagem:</span>
+                                </div>
+                                <input type="text" placeholder="Imagem" class="input-linha" id="input-imagem">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn">
+                        <div id="bottom-container-produto">
+                        </div>
+                        <button id="submit-button-produto">Enviar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <div class="title-button">
+                Consultar:
+            </div>
+            <div class="buttons-area">
+                <button>
+                    <a href="../pages/produto.html"> Produto </a>
+                </button>
+
+                <button>
+                    <a href="../pages/projeto.html"> Projeto </a>
+                </button>
+
+                <button>
+                    <a href="../pages/patrocinador.html"> Patrocinador </a>
+                </button>
+
+                <button>
+                    <a href="../pages/voluntario.html"> Voluntário </a>
+                </button>
+
+                <button>
+                    <a href="../pages/recados.html"> Recados </a>
+                </button>
+
+                <button>
+                    <a href="../pages/doacoes.html"> Doações </a>
+                </button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

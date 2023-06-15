@@ -1,0 +1,222 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/*BASICS*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    padding-top: 20px;
+    height: fit-content;
+}
+
+.arrow-home {
+    display: flex;
+}
+
+/*CARDS*/
+.validation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-weight: 900;
+}
+
+.actions {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00C0EA;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+    color: #00C0EA;
+}
+
+.card-produtos,
+.card-projetos {
+    background-color: #F5F5F5;
+    width: 450px;
+    height: 650px;
+    align-self: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00C0EA;
+}
+
+.card-adm {
+    background-color: #F5F5F5;
+    width: 450px;
+    height: 350px;
+    align-self: flex-start;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00C0EA;
+}
+
+.title {
+    text-align: start;
+    font-size: 20px;
+    width: 100px;
+    border-bottom: 3px solid #00C0EA;
+}
+
+#bottom-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#bottom-container-projeto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#bottom-container-produto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.success-message {
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: start;
+}
+
+
+
+/*STYLE FORMS*/
+.forms-projeto,
+.forms-adm,
+.forms-produto {
+    display: grid;
+    gap: 10px;
+}
+
+.row-1 {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.input-linha {
+    width: 100%;
+}
+
+.nome,
+.preco {
+    width: 100%;
+}
+
+.inputs-medidas {
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    background-color: #E2E2E2;
+}
+
+.descricao,
+.imagem {
+    width: 100%;
+}
+
+.descricao input {
+    height: 250px;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 1PX solid #00C0EA;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00C0EA
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-rows: 80px 1fr 80px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .validation {
+        width: 100%;
+    }
+
+    .card-produtos,
+    .card-projetos {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .descricao input {
+        height: 150px;
+    }
+}

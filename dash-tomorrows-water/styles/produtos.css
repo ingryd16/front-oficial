@@ -1,0 +1,47 @@
+.card {
+    border: 2px solid #00C0EA;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00C0EA;
+}
+
+.card__description {
+    margin-top: 10px;
+    color: #666;
+    text-align: justify;
+}
+
+.card__preco {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card__img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 300px;
+    margin-top: 20px;
+}
+
+.text_container{
+    max-width: 400px;
+}
+
+.container-collections{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+}

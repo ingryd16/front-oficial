@@ -1,0 +1,308 @@
+.recado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    height: fit-content;
+    padding: 60px 0px 60px;
+}
+  
+.container-recado {
+    height: 100%;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.container-mapa {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
+}
+  
+.container_input_recado {
+    width: 350px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.recado-titulo {
+    width: 70%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #00C0EA;
+}
+  
+.btn-recado-enviar {
+    width: 70%;
+    display: flex;
+    justify-content: start;
+}
+  
+.btn-enviar-recados {
+    background-color: #00C0EA;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+  
+.recado-input {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.forms {
+    width: 70%;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00C0EA;
+}
+  
+.input-linha {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+textarea{
+    padding: 14px;
+}
+  
+#descricao-input {
+    height: 170px;
+    border-radius: 20px;
+}
+  
+.row-1 {
+    margin-top: 10px;
+}
+.error-message{
+    color: red;
+}
+
+@media screen and (max-width: 980px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 880px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 780px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-recado {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-mapa {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+      
+    .container_input_recado {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 30px;
+        width: fit-content;
+        align-items: center;
+    }
+    .recado-titulo {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00C0EA;
+    }
+    .recado-titulo span {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .btn-recado-enviar{
+        display: flex;
+        justify-content: center;
+    }
+}

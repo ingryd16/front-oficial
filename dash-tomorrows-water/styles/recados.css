@@ -1,0 +1,35 @@
+.card {
+    border: 1px solid #bbb;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+}
+
+
+.card__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00C0EA;
+}
+
+.text_container{
+    max-width: 400px;
+}
+
+.container-collections{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .card {
+        min-width: 350px;
+        max-width: 350px;
+    }
+}
