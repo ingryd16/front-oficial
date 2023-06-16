@@ -36,8 +36,6 @@ export const excluirProduto = async (produtoId) => {
     }
 };
 
-
-
 export const projetos = async () => {
    
     const url = `https://tomorrows-water.onrender.com/v1/tomorrows-water/projeto`
@@ -110,14 +108,14 @@ export const recados = async () => {
     }   
 }
 
-export const doacoes = async () => {
-   
-    const url = `https://tomorrows-water.onrender.com/v1/tomorrows-water/doacao`
+export const adm = async () => {
+    const url = `https://tomorrows-water.onrender.com/v1/tomorrows-water/administrador`
     const response = await fetch(url)
     const data = await response.json()
-    const { doacoes } = data;
-    console.log(doacoes)
+    const { administradores  } = data;
+    console.log(administradores )
     return {
         ...data
     }   
 }
+
