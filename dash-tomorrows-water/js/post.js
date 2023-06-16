@@ -48,9 +48,47 @@ const imagem = document.getElementById("input-imagem");
 
 const button = document.getElementById('submit-button-produto');
 
+
 button.addEventListener("click", (e) => {
     e.preventDefault();
-    // checkInputs();
+
+    // Verifica se os campos obrigatórios estão preenchidos
+    if ( nome.value.trim() === "" || descricao.value.trim() === "" || cor.value.trim() === "" || preco.value.trim() === "" || imagem.value.trim() === "" || categoria.value.trim() === ""){
+        // Exibe mensagem de erro
+        const errorElement = document.createElement("div");
+        errorElement.textContent = "Nome, descrição, cor, preço, imagem e categoria são campos obrigatórios.";
+        errorElement.classList.add("error-message");
+
+        const bottomContainer = document.getElementById("bottom-container-produto");
+        bottomContainer.appendChild(errorElement);
+
+        // Remove a mensagem de erro após 3 segundos
+        setTimeout(() => {
+            bottomContainer.removeChild(errorElement);
+        }, 3000);
+
+        return; // Interrompe o envio do formulário caso haja erro
+    }
+
+    // Verifica se a imagem é uma URL válida
+    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    if (!urlRegex.test(imagem.value.trim())) {
+        // Exibe mensagem de erro
+        const errorElement = document.createElement("div");
+        errorElement.textContent = "A imagem deve ser uma URL válida.";
+        errorElement.classList.add("error-message");
+
+        const bottomContainer = document.querySelector(".row-4-produto");
+        bottomContainer.appendChild(errorElement);
+
+        // Remove a mensagem de erro após 3 segundos
+        setTimeout(() => {
+            bottomContainer.removeChild(errorElement);
+        }, 3000);
+
+        return; // Interrompe o envio do formulário caso haja erro
+    }
+
 
     const produto = {
         "id": "",  

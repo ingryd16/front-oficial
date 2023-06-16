@@ -7,7 +7,6 @@
 
 /*BASICS*/
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -122,6 +121,13 @@ header {
     text-align: start;
 }
 
+.error-message{
+    color: rgb(233, 31, 12);
+    font-size: 13px;
+    font-weight: bold;
+    text-align: start;
+}
+
 
 
 /*STYLE FORMS*/
@@ -132,11 +138,30 @@ header {
     gap: 10px;
 }
 
-.row-1 {
+.row-1-produto,
+.row-1-adm,
+.row-1-projeto,
+
+.row-2-produto,
+.row-2-adm,
+
+.row-3-adm,
+.row-3-produto,
+.row-3-projeto{
     display: flex;
     width: 100%;
-    gap: 15px;
+    gap: 10px;
 }
+
+
+.row-2-projeto,
+.row-4-produto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
 
 .input-linha {
     width: 100%;
